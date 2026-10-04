@@ -1,0 +1,11 @@
+{
+  "name": "web-frontend-essentials-capstone",
+  "version": "1.0.0",
+  "description": "Offline Riverside Library bus stop page",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

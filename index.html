@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverside Library - Bus Stop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Riverside Library</h1>
+        <p>Library services and Route 42 departures</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="request-title">
+            <h2 id="request-title">Book Request</h2>
+
+            <form id="book-form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="book">Book Title</label>
+                <input id="book" name="book" type="text" required>
+
+                <button type="submit">Request Book</button>
+            </form>
+
+            <p id="form-message" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="schedule-title">
+            <h2 id="schedule-title">Route 42 Departures</h2>
+
+            <table>
+                <caption>Route 42 timetable</caption>
+                <thead>
+                    <tr>
+                        <th>Stop</th>
+                        <th>Departure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Riverside Library</td>
+                        <td>08:15</td>
+                    </tr>
+                    <tr>
+                        <td>Riverside Library</td>
+                        <td>09:00</td>
+                    </tr>
+                    <tr>
+                        <td>Riverside Library</td>
+                        <td>10:15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="departures-title">
+            <h2 id="departures-title">Live Departures</h2>
+
+            <button id="load-departures" type="button">
+                Load Departures
+            </button>
+
+            <ul id="departures"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Riverside Library</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
